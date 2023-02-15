@@ -8,7 +8,7 @@ console.log(sum);
 
 
 /* LISTA DE MASCOTAS EN ADOPCION */
-const search = perritos.lista;
+const search = perritos.Mascota;
 console.log(search);
 
 
