@@ -16,6 +16,7 @@ export function firstFunction(a) {
 /* LISTA DE MASCOTAS EN ADOPCION */
 
 export class Mascota {
+    
     constructor(nombre, raza, edad, ubicacion) {
 
         this.nombre = nombre;
@@ -28,18 +29,15 @@ export class Mascota {
 
 /* FUNCION PARA ELEGIR MASCOTA */
 
-export function miSwitch() {
+export function miSwitch(perro) {
 
-    let perro = "C";
+    const ciclo = {
+        C: new Mascota("CATA", "MESTIZA", 14, "..."),
+        I: new Mascota("INDIA", "MESTIZA", 3, "..."),
+        V: new Mascota("VICENTA", "CANICHE", 1, "..."),
+        M: new Mascota("MALI", "PITBULL", 3, "..."),
+        P: new Mascota("PAMPA", "MESTIZA", 1, "..."),
+    };
 
-const ciclo = {
-    C: new Mascota("CATA", "MESTIZA", 14, "..."),
-    I: new Mascota("INDIA", "MESTIZA", 3, "..."),
-    V: new Mascota("VICENTA", "CANICHE", 1, "..."),
-    M: new Mascota("MALI", "PITBULL", 3, "..."),
-    P: new Mascota("PAMPA", "MESTIZA", 1, "..."),
-};
-
-const final = ciclo[perro];
-return final;
+    return ciclo[perro];
 }

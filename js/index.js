@@ -14,5 +14,5 @@ console.log(search);
 
 
 /* FUNCION PARA ELEGIR MASCOTA */
-const ciclo = perritos.miSwitch();
+const ciclo = perritos.miSwitch("C");
 console.log(ciclo);

@@ -1,4 +1,65 @@
-body {
+/* Barra de Navegación */
 
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar-brand {
+        display: none;
+    }
     
+}
+
+/* Main */
+
+/* propiedades grales de sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 68, 184);
+}
+
+/* propiedades expecíficas de ESTE section */
+.welcome {
+    min-height: 500px;
+    text-align: center;
+}
+
+.welcome_container {
+    padding: 3rem;
+    /* agregar con un MIXIN las clases del .welcome */
+}
+
+.welcome_container h2 {
+    color:rgb(0, 0, 0);
+    font-family: 'Shadows Into Light', cursive;
+}
+.welcome_container h5 {
+    color:rgb(0, 0, 0)
+}
+
+.welcome_images {
+    margin-bottom: 2.5rem;
+}
+
+.welcome_images_img {
+    width: 20rempx;
+    height: 20rem;
+}
+
+
+.carruselImg {
+
+    height: 20rem;
 }
