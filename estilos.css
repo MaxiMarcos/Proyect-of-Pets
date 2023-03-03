@@ -32,7 +32,7 @@ section {
 
 /* propiedades expecíficas de ESTE section */
 .welcome {
-    min-height: 500px;
+    min-height: 380px;
     text-align: center;
 }
 
@@ -50,16 +50,31 @@ section {
 }
 
 .welcome_images {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .welcome_images_img {
-    width: 20rempx;
-    height: 20rem;
+    width: 20rem;
+    height: 15rem;
 }
 
+/* PROPIEDADES CARDS */
 
-.carruselImg {
+.cardSection {
 
-    height: 20rem;
+}
+
+.cardSection_container {
+    width: 50%;
+}
+
+.imgCard {
+    height: 15rem;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .cardSection_container {
+        width: 100%;
+    }
 }
